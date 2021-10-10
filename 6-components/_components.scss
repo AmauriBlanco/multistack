@@ -1,0 +1,240 @@
+.header {
+    background-color: #000000;
+}
+.bg1 {
+    background-image: url(/img/Group10.png),linear-gradient( #000000, #000000, #000000, #000000fd);
+    background-repeat: no-repeat;
+    background-size: cover;
+    & .bg2 {
+        background-image: linear-gradient( to top, #000000c2, #000000a1, #000000a4 );    
+    } 
+}
+
+.white-text {
+    color: #fff;
+}
+
+.description {
+    & .white-text {
+        font-size: $text-size;
+    }
+    & .border-style {
+        border-bottom: 1px solid #808080c4;
+    }
+    & .white {
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Russo One', sans-serif;
+    }
+}
+
+.subscription {
+    background-image: linear-gradient( to top, #00000000, #02e7d800, #02e7d86c, $turquesa, $turquesa );
+    border: solid 2px $turquesa;
+    border-radius: 7px;
+    & .sub-title {
+        font-size: $sub-title-size;
+        font-weight: 900;
+    }
+
+    & .input-area {
+        background-color: #000000;
+        box-shadow: 1px 1px 2px black;
+        border-radius: 5px;
+        color: $turquesa;
+        font-size: $text-size;
+        border: none;
+    }
+
+    & .button {
+        font-size: 1.5em;
+        font-weight: 900;
+        border-bottom: 7px solid $turquesa;
+        border-radius: 7px;
+        
+    }
+
+    & .white-text {
+        text-align: center;
+    }
+}
+    
+.check .span {
+    background-color: #141414;
+    border-radius: 4px;
+    border: 1px solid #828282;
+}
+.input:checked + .span {
+    background-color: $turquesa;
+}
+.video {
+    background-color: #000000;
+    & .container {
+        background-color: black;
+    }
+}
+
+
+.pra-quem {
+    background-color: #fff;
+    & .color-number {
+        color: $turquesa;
+        font-weight: 900;
+    }
+}
+
+.cronograma {
+    .card {
+        background-color: $turquesa;
+        border-radius: 15px;
+        box-shadow: 1px 1px 3px #0aeed0bb;
+        & .title-card {
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+        & .subtitle-card {
+            color: #fff;
+            font-size: 1.1em;
+            font-weight: 700;
+        }
+    }
+    & .card-title, .card-subtitle {
+        font-size: 1.7em;
+        font-family: 'Russo One', sans-serif;
+        font-weight: 500;
+    }
+   
+}
+
+.white-card {
+    background-color: #fff;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 800;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #ffffff86;
+    & .card-sub-title, .text {
+        font-size: 1.1em;
+    }
+    & .div {
+        background-color: #6e6e6e9f;
+    }
+}
+
+
+.button-card {
+    & .btn-card {
+        background-color: black;
+        color: $turquesa;
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.1em;
+        font-weight: 300;
+        border-bottom: 10px solid $turquesa;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 8px;
+    }
+}
+
+.cronograma {
+    background-image: url(/img/cinza-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.line-column, .line-column-big, .line-row, .line-row2 {
+    background-color: $cinza;
+}
+
+.img-bg-black {
+    border-radius: 50%;
+}
+
+.black-circle {
+    background-image: url(/img/Ellipse17.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hr {
+    background-color: black;
+}
+.aprender {
+    background-color: black;
+    color: #fff;
+    & .aprender-title {
+        font-size: 1.8em;
+        font-family: 'Russo One', sans-serif;
+        font-weight: 500;
+    }
+    .prof-area {
+        & .prof-title {
+            color: $turquesa;
+        }
+        & .prof {
+            border: 3px solid transparent;
+            border-image: linear-gradient(to top, $turquesa, $turquesa, #02e7d8b9, #02e7d842, #02e7d818, #02e7d818, #02e7d818);
+            border-image-slice: 1;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.685);
+        }
+    }
+    & .hr {
+       border-color: #6e6e6e9f;
+    }
+}
+
+
+.certificacao {
+    & .hr2 {
+        background-color: #F2F2F2;
+    }
+    & .certificacao-title {
+        font-family: 'Russo One', sans-serif;
+        font-weight: 300;
+        font-size: 1.8em;
+        color: #fff;
+        text-align: center;
+    }
+    & .certificacao-content {
+        color: rgba(255, 255, 255, 0.836);
+        line-height: 1.2;
+        
+    }
+}
+
+.text-section {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.button {
+    & .button-self {
+        background-color: $turquesa;
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.3em;
+        font-weight: 600;
+        border-bottom: 10px solid black;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 8px;
+    }
+}
+
+.white-black {
+    background-image: url(/img/white-black.png);
+    background-size: cover;
+}
+
+.footer {
+    & .footer-text {
+        font-size: 0.9em;
+    }
+    background-color: black;
+    color: #fff;
+    & .border-icon {
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+}

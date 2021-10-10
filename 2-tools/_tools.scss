@@ -1,0 +1,16 @@
+@mixin display($a: flex, $b: row, $c: center, $d: center, $e: nowrap, $f: 20px) {
+    display: $a;
+    flex-direction: $b;
+    justify-content: $c;
+    align-items: $d;
+    flex-wrap: $e;
+    gap: $f;
+}
+
+@mixin margin($values...) {
+    margin: $values;
+}
+
+@mixin pad($values...) {
+    padding: $values;
+}
