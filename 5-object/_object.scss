@@ -9,7 +9,7 @@
 }
 
 .multistack {
-    @include pad(50px 0);
+    @include pad(50px 0 300px 0);
     @include display(flex, row, center, center, wrap, 40px);
     & .multistack-description {
         width: 40%;
@@ -31,6 +31,63 @@
     }
     
 }
+@media(max-width: $breakpoint-tablet) {
+    .multistack {
+        & .multistack-description {
+            width: 60%;
+        }
+        & .description {
+            @include display(flex, column, center, center,wrap);
+            text-align: center;
+            & .description-logo {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+@media(max-width :$breakpoint-smallphone) {
+    .multistack{
+        & .multistack-description{
+            @include margin(0 auto);
+            width: 90%;
+        }
+        & .subscription {
+            @include pad(30px);
+            @include margin(0 auto);
+            width: 80%;
+            & .input-area {
+                @include pad(0 5px);
+                background-image: none;
+                width: 100%;
+            }
+            & .button {
+                width: 100%;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+}
+@media(max-width :$breakpoint-smallscreen) {
+    .description {
+        & .description-logo {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width :$breakpoint-smallscreen) {
+    .description {
+        & .class-row {
+            @include display(flex, column, center, center, wrap, 40px);
+            & .row {
+                @include display(flex, column, center, center);
+            }
+        }
+    }
+}
 
 .subscription {
     @include display(flex, column, center, center,wrap, 35px);
@@ -38,7 +95,7 @@
     width: 500px;
     & .input-area  {
         @include pad(0 0 0 80px);
-        width: 85%;
+        width: 75%;
         height: 70px;   
     } 
     & .name{
@@ -81,17 +138,17 @@
 }
 
 .black-white {
-        display: block;
-        background-image: url("/img/teste.png");
-        background-size: cover;
-        width: 100%;
         & .video-self {
             @include display;
             @include margin(0 auto); 
         }
 }
 
-
+@media(max-width :$breakpoint-smallphone) {
+    .video-self {
+        width: 70%;
+    }
+}
 
 .img-top-section {
     @include display(flex, row, space-between);
@@ -103,10 +160,36 @@
         top: -150px;
     }  
 }
+
+@media(max-width: $breakpoint-tablet) {
+    .img-top-section {
+       & .working-man {
+            position: relative;
+            top: 0;
+       }
+    }
+}
+
+@media(max-width: $breakpoint-phone) {
+    .pra-quem, .paragraph {
+        @include pad( 30px 0);
+    }
+    .img-top-section {
+       & .working-man {
+          
+            display: none;
+       }
+    }
+}
+
+
+
 .paragraph {
     @include display(flex, column, center, flex-start, nowrap, 40px);
-    text-align:left;
     @include margin(0 0 100px 0);
+    @include pad(10px 0 150px 0);
+    text-align:left;
+    
 }
 
 .cronograma {
@@ -144,6 +227,21 @@
     }
 }
 
+@media(max-width :$breakpoint-smallphone){
+    .paragraph {
+        @include margin(0 auto);
+    }
+    .cronograma {
+        @include margin(0 auto);
+    }
+}
+
+@media(max-width :$breakpoint-smallscreen) {
+    .paragraph {
+        text-align: center;
+    }
+}
+
 .white-card {
         @include display(flex, column, center, center, nowrap, 20px);
         @include pad(20px 20px 30px 20px);
@@ -161,6 +259,30 @@
         }
 }
 
+@media(max-width :$breakpoint-smallscreen){
+    .cronograma {
+        & .card {
+            width: 90%;
+            gap: 0;
+        }
+        .card-row-area {
+            width: 100%;
+        }
+        & .column-card {
+            @include pad(20px 0);
+            & .card-row {
+                @include pad(0 5px);
+                width: 100%;
+            }
+        }
+        & .last-card {
+            width: 100%;
+            & .white-card {
+                width: 90%;
+            }
+        }
+    }
+}
 
 .button-card {
     @include display(flex, row, center, center, wrap, 40px);
@@ -175,9 +297,34 @@
 .lines {
     position: relative;
     top: 100px;
-
 }
 
+@media(max-width: $breakpoint-column-cards) {
+    .lines {
+        display: none;
+    }
+}
+
+
+@media(max-width: $breakpoint-phone ) {
+    .column-card {
+        height: auto;
+    }
+    .column-card, .card-row {
+        @include display(flex, column, center, center, wrap, 0);
+        @include pad(20px);
+    }
+    .lines {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    .button-card {
+        @include margin(100px auto 0 auto);
+    }
+    
+}
 .line-column {
     @include margin(0 auto);
     display: block;
@@ -202,6 +349,14 @@
 
 }
 
+@media(max-width: $breakpoint-tablet){
+    .div-row {
+        & .line-row2 {
+            width: 80%;
+        }
+    }
+}
+
 .line-column-big {
     @include margin(0 auto);
     display: block;
@@ -212,12 +367,31 @@
 }
 
 .card-row-area {
-    @include display(flex, row, center, center, nowrap);
+    @include display(flex, row, center, center, wrap);
     @include margin (0 auto);
     max-width: 1000px;
-
 }
 
+@media(max-width: $breakpoint-tablet) {
+    .card-row-area {
+        width: 100%;
+        gap: 10px;
+    }
+    .cronograma {
+        & .container {
+            width: 90%;
+        }
+        & .column-card {
+            @include margin(0);
+            display: block;
+            height: auto
+        }
+    }
+    .last-card {
+        @include pad(175px 0 0 0);
+        display: block;
+    }
+}
 
 
 .black-circle{
@@ -230,10 +404,8 @@
     }
 }
 
-
-
-
 .tools {
+    @include pad(0 0 300px 0);
     & .tools-title {
         @include margin(80px auto 30px auto);
         width: 345px;
@@ -242,20 +414,21 @@
         @include pad(10px 0 50px 0);
     }
     & .icons {
-        @include pad(55px);
+        @include pad(50px 30px);
     }
 }
 
-.grey-black {
-    display: block;
-    background-image: url("/img/grey-black.png");
-    background-size: cover;
-    width: 100%;
-    height: 150px
+@media(max-width: $breakpoint-phone){
+    .tools {
+        @include pad(50px 0);
+        & .tools-title {
+            width: 90%;
+        }
+    }
 }
 
 .aprender {
-    @include pad(0 0 0 0);
+    @include pad(180px 0 0 0);
     & .aprender-title{
         @include margin(0 auto 20px auto);
         width: 370px;
@@ -263,9 +436,18 @@
     }
      
 }
+
+@media(max-width :$breakpoint-smallscreen) {
+    .aprender {
+        & .aprender-title {
+            width: 90%;
+        }
+    }
+}
+
 .prof-area {
     @include display(flex, row, center, center, wrap, 40px);
-    @include pad(50px 0 50px 0);
+    @include pad(50px 0 70px 0);
     & .prof {
         @include display(flex, column, flex-start, center, wrap, 40px);
         @include pad(10px);
@@ -291,8 +473,30 @@
         @include margin(0 0 50px -10px);
     }
 }
+@media(max-width :$breakpoint-phone) {
+    .certificacao {
+        & .certificacao-content {
+            & .content-text {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media(max-width :$breakpoint-smallphone){
+    .certificacao {
+        & .certificacao-content {
+            & .content-text {
+                text-align: center;
+                width: 70%;
+            }
+        }
+    }
+}
 
 .aspas {
+    position: relative;
+    top: -190px;
     & .text-section {
         @include margin(0 auto);
         width: 50%;
@@ -307,7 +511,6 @@
     }
     & .button {
         @include display(flex, row, center, center, wrap, 40px);
-        @include margin(40px auto 100px auto);
         & .button-self {
             height: 80px;
             width: 470px;
@@ -319,6 +522,23 @@
     }
 }
 
+@media(max-width :$breakpoint-smallphone) {
+    .aspas {
+        position: relative;
+        top: -210px;
+        & .img {
+            display: none;
+        }
+        & .text-section {
+            @include pad(30px 0);
+            width: 80%;
+        }
+        & .button {
+            @include pad(50px 0);
+        }
+    }
+}
+
 .white-black {
     display: block;
     width: 100%;
@@ -327,7 +547,7 @@
 }
 
 .footer {
-    @include pad(0 0 100px 0);
+    @include pad(200px 0 100px 0);
     & .footer-content {
         @include display(flex, column, center, center, wrap, 20px);
         & .row {
@@ -348,8 +568,27 @@
             @include margin(0 10PX);
             @include pad(5px);
         }
+        & .icons-medias {
+            @include display;
+            @include margin(0 auto);
+            gap: 0;
+        }
+    }   
 }
 
-    
+@media(max-width: $breakpoint-smallphone) {
+    .footer {
+        & .container {
+            width: 100%;
+        }
+        & .footer-logo {
+            width: 80%;
+        }
+        & .footer-content {
+            & .row {
+                width: 80%;
+            }
+        }
+    }
 }
 

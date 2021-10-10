@@ -68,15 +68,23 @@
     background-color: $turquesa;
 }
 .video {
-    background-color: #000000;
+    background-color: black;
+    transform: skew(0deg, -5deg) translateY(-250px);
     & .container {
         background-color: black;
+    }
+    & .black-white {
+        transform: skew(0deg, 5deg) translateY(50px);
     }
 }
 
 
 .pra-quem {
     background-color: #fff;
+    transform: skew(0deg, -5deg) translateY(-150px);
+    & .container {
+        transform: skew(0deg, 5deg);
+    }
     & .color-number {
         color: $turquesa;
         font-weight: 900;
@@ -137,10 +145,14 @@
 }
 
 .cronograma {
-    background-image: url(/img/cinza-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $bg-cinza;
+    transform: skew(0deg, -5deg) translateY(-150px);
+    & .container {
+        transform: skew(0deg, 5deg);
+    }
+    
 }
+
 .line-column, .line-column-big, .line-row, .line-row2 {
     background-color: $cinza;
 }
@@ -159,8 +171,12 @@
     background-color: black;
 }
 .aprender {
-    background-color: black;
     color: #fff;
+    background-color: black;
+    transform: skew(0deg, -5deg) translateY(-150px);
+    & .container {
+        transform: skew(0deg, 5deg);
+    }
     & .aprender-title {
         font-size: 1.8em;
         font-family: 'Russo One', sans-serif;
@@ -184,6 +200,15 @@
 }
 
 
+.certificacao-section {
+    color: #fff;
+    background-color: black;
+    transform: skew(0deg, -5deg) translateY(-155px);
+    & .black-white {
+        transform: skew(0deg, 5deg);
+    }
+}
+
 .certificacao {
     & .hr2 {
         background-color: #F2F2F2;
@@ -201,7 +226,13 @@
         
     }
 }
-
+.bg-aspas {
+    background-color: #fff;
+    transform: skew(0deg, -5deg) translateY(80px);
+    & .container {
+        transform: skew(0deg, 5deg);
+    }
+}
 .text-section {
     font-size: 1.5em;
     font-weight: 800;
@@ -222,17 +253,13 @@
     }
 }
 
-.white-black {
-    background-image: url(/img/white-black.png);
-    background-size: cover;
-}
-
 .footer {
+    z-index: -10;
+    color: #fff;
+    background-color: black;
     & .footer-text {
         font-size: 0.9em;
     }
-    background-color: black;
-    color: #fff;
     & .border-icon {
         border: 2px solid #fff;
         border-radius: 50%;
