@@ -396,12 +396,10 @@
 
 .black-circle{
     @include margin(30px auto);
-    display: block;
+    display: grid;
+    place-items: center;
     height: 100px;
     width: 100px;
-    & .img-bg-black {
-        @include margin(30px auto);
-    }
 }
 
 .tools {
@@ -562,17 +560,24 @@
             text-align: center;
             width: 60%;
         }
-        & .icon {
-            width: 30px;
-            height: 30px;
-            @include margin(0 10PX);
-            @include pad(5px);
-        }
         & .icons-medias {
             @include display;
             @include margin(0 auto);
             gap: 0;
         }
+        & .border-icon {
+            @include pad(5px);
+            @include margin(0 5px);
+            width: 40px;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            & .icon {
+                width: 30px;
+                height: 30px;
+            }
+
+        } 
     }   
 }
 
