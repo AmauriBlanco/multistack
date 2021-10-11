@@ -55,11 +55,10 @@
         & .subscription {
             @include pad(30px);
             @include margin(0 auto);
-            width: 80%;
+            width: 70%;
             & .input-area {
-                @include pad(0 5px);
-                background-image: none;
-                width: 100%;
+                @include pad(0 0 0 80px);
+                width: 60%;
             }
             & .button {
                 width: 100%;
@@ -71,9 +70,26 @@
 }
 
 @media(max-width :$breakpoint-smallscreen) {
-    .description {
-        & .description-logo {
-            width: 100%;
+    .multistack {
+
+        &.description {
+            & .description-logo {
+                width: 100%;
+                
+            }
+        }
+       & .subscription {
+           width: 80%;
+            & .input-area, .button{
+                @include margin(0 auto);
+                height: 60px;
+                width: 77%;
+                border: none;
+            }
+            & .security {
+                font-size: 0.9em;
+            }
+            
         }
     }
 }
@@ -225,6 +241,14 @@
     }
 }
 
+@media(max-width: $breakpoint-smallscreen) {
+    .cronograma {
+        & .card-title {
+            @include pad(100px 0);
+        }
+    }
+}
+
 @media(max-width :$breakpoint-smallphone){
     .paragraph {
         @include margin(0 auto);
@@ -236,6 +260,7 @@
 
 @media(max-width :$breakpoint-smallscreen) {
     .paragraph {
+        @include pad(40px 0 40px 0);
         text-align: center;
     }
 }
@@ -274,6 +299,7 @@
             }
         }
         & .last-card {
+            @include pad(70px 0 20px 0);
             width: 100%;
             & .white-card {
                 width: 90%;
@@ -373,7 +399,7 @@
     }
     .cronograma {
         & .container {
-            width: 90%;
+            width: 95%;
         }
         & .column-card {
             @include margin(0);
@@ -429,8 +455,14 @@
 
 @media(max-width :$breakpoint-smallscreen) {
     .aprender {
+        @include pad(70px 0 0 0);
         & .aprender-title {
             width: 90%;
+        }
+        & .prof-area {
+            & .prof {
+                width: 100%;
+            }
         }
     }
 }
@@ -474,10 +506,12 @@
 
 @media(max-width :$breakpoint-smallphone){
     .certificacao {
+        @include pad(0 0 70px 0);
         & .certificacao-content {
+            gap: 0;
             & .content-text {
                 text-align: center;
-                width: 70%;
+                width: 100%;
             }
         }
     }
@@ -525,6 +559,25 @@
         & .button {
             @include pad(50px 0);
         }
+    }
+}
+
+@media(max-width: $breakpoint-smallscreen) {
+    .aspas {
+        & .text-section {
+            position: relative;
+            top: 70px;
+            width: 90%;
+        }
+        & .aspas-p {
+            left: 90%;
+            top: 70px;
+        }
+        & .button {
+            position: relative;
+            top: 100px;
+        }
+
     }
 }
 
@@ -588,3 +641,12 @@
     }
 }
 
+@media(max-width: $breakpoint-smallphone) {
+    .container-smallphone {
+        width: 96%;
+        @include margin(0 auto);
+    }
+    iframe {
+        height: 250px;
+    }
+}

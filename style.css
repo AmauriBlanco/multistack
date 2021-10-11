@@ -89,12 +89,11 @@ button, .border-icon {
   .multistack .subscription {
     padding: 30px;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
   }
   .multistack .subscription .input-area {
-    padding: 0 5px;
-    background-image: none;
-    width: 100%;
+    padding: 0 0 0 80px;
+    width: 60%;
   }
   .multistack .subscription .button {
     width: 100%;
@@ -102,8 +101,20 @@ button, .border-icon {
   }
 }
 @media (max-width: 425px) {
-  .description .description-logo {
+  .multistack.description .description-logo {
     width: 100%;
+  }
+  .multistack .subscription {
+    width: 80%;
+  }
+  .multistack .subscription .input-area, .multistack .subscription .button {
+    margin: 0 auto;
+    height: 60px;
+    width: 77%;
+    border: none;
+  }
+  .multistack .subscription .security {
+    font-size: 0.9em;
   }
 }
 @media (max-width: 425px) {
@@ -289,6 +300,11 @@ button, .border-icon {
   padding: 200px 0 100px 0;
 }
 
+@media (max-width: 425px) {
+  .cronograma .card-title {
+    padding: 100px 0;
+  }
+}
 @media (max-width: 742px) {
   .paragraph {
     margin: 0 auto;
@@ -300,6 +316,7 @@ button, .border-icon {
 }
 @media (max-width: 425px) {
   .paragraph {
+    padding: 40px 0 40px 0;
     text-align: center;
   }
 }
@@ -341,6 +358,7 @@ button, .border-icon {
     width: 100%;
   }
   .cronograma .last-card {
+    padding: 70px 0 20px 0;
     width: 100%;
   }
   .cronograma .last-card .white-card {
@@ -448,7 +466,7 @@ button, .border-icon {
   }
 
   .cronograma .container {
-    width: 90%;
+    width: 95%;
   }
   .cronograma .column-card {
     margin: 0;
@@ -501,8 +519,14 @@ button, .border-icon {
 }
 
 @media (max-width: 425px) {
+  .aprender {
+    padding: 70px 0 0 0;
+  }
   .aprender .aprender-title {
     width: 90%;
+  }
+  .aprender .prof-area .prof {
+    width: 100%;
   }
 }
 .prof-area {
@@ -554,9 +578,15 @@ button, .border-icon {
   }
 }
 @media (max-width: 742px) {
+  .certificacao {
+    padding: 0 0 70px 0;
+  }
+  .certificacao .certificacao-content {
+    gap: 0;
+  }
   .certificacao .certificacao-content .content-text {
     text-align: center;
-    width: 70%;
+    width: 100%;
   }
 }
 .aspas {
@@ -611,6 +641,21 @@ button, .border-icon {
   }
   .aspas .button {
     padding: 50px 0;
+  }
+}
+@media (max-width: 425px) {
+  .aspas .text-section {
+    position: relative;
+    top: 70px;
+    width: 90%;
+  }
+  .aspas .aspas-p {
+    left: 90%;
+    top: 70px;
+  }
+  .aspas .button {
+    position: relative;
+    top: 100px;
   }
 }
 .white-black {
@@ -676,6 +721,16 @@ button, .border-icon {
     width: 80%;
   }
 }
+@media (max-width: 742px) {
+  .container-smallphone {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
 .header {
   background-color: #000000;
 }
@@ -732,6 +787,15 @@ button, .border-icon {
   text-align: center;
 }
 
+@media (max-width: 425px) {
+  .subscription .sub-title {
+    font-size: 1.8em;
+  }
+
+  .description .white-text {
+    font-size: 1.2em;
+  }
+}
 .check .span {
   background-color: #141414;
   border-radius: 4px;
