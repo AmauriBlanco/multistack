@@ -19,7 +19,6 @@
 .description {
     @include display(flex, column, center, flex-start,wrap, 50px);
     text-align: left;
-    
     & .row {
         @include display(flex, row, flex-start, center, wrap)
     }
@@ -28,9 +27,9 @@
     }
     & .white-text {
         @include pad(0 0 50px 0)
-    }
-    
+    }  
 }
+
 @media(max-width: $breakpoint-tablet) {
     .multistack {
         & .multistack-description {
@@ -70,6 +69,7 @@
     }
 
 }
+
 @media(max-width :$breakpoint-smallscreen) {
     .description {
         & .description-logo {
@@ -120,8 +120,8 @@
     @include display;
     & .check .input {
         display: none;
-        
     }
+
     & .check .span {
         position: relative;
         display: inline-block;
@@ -138,10 +138,10 @@
 }
 
 .black-white {
-        & .video-self {
-            @include display;
-            @include margin(0 auto); 
-        }
+    & .video-self {
+        @include display;
+        @include margin(0 auto); 
+    }
 }
 
 @media(max-width :$breakpoint-smallphone) {
@@ -155,6 +155,7 @@
     & .img-group {
         @include display(flex, column, flex-start, flex-start);
     }
+
     & .working-man {
         position: relative;
         top: -150px;
@@ -182,14 +183,11 @@
     }
 }
 
-
-
 .paragraph {
     @include display(flex, column, center, flex-start, nowrap, 40px);
     @include margin(0 0 100px 0);
     @include pad(10px 0 150px 0);
-    text-align:left;
-    
+    text-align:left; 
 }
 
 .cronograma {
@@ -287,7 +285,6 @@
 .button-card {
     @include display(flex, row, center, center, wrap, 40px);
     @include margin(100px auto 100px auto);
-    
     & .btn-card {
         height: 80px;
         width: 450px;
@@ -314,10 +311,7 @@
         @include display(flex, column, center, center, wrap, 0);
         @include pad(20px);
     }
-    .lines {
-        display: none;
-    }
-    .desktop {
+    .lines, .desktop {
         display: none;
     }
     .button-card {
@@ -325,6 +319,7 @@
     }
     
 }
+
 .line-column {
     @include margin(0 auto);
     display: block;
@@ -346,7 +341,6 @@
     & .line-row2 {
         width: 60%;
     }
-
 }
 
 @media(max-width: $breakpoint-tablet){
@@ -393,7 +387,6 @@
     }
 }
 
-
 .black-circle{
     @include margin(30px auto);
     display: grid;
@@ -432,7 +425,6 @@
         width: 370px;
         text-align: center;
     }
-     
 }
 
 @media(max-width :$breakpoint-smallscreen) {
@@ -452,7 +444,6 @@
         height: 550px;
         width: 300px;
     }
-    
 }
 
 .certificacao {

@@ -1,6 +1,7 @@
 .header {
     background-color: #000000;
 }
+
 .bg1 {
     background-image: url(/img/Group10.png),linear-gradient( #000000, #000000, #000000, #000000fd);
     background-repeat: no-repeat;
@@ -36,7 +37,6 @@
         font-size: $sub-title-size;
         font-weight: 900;
     }
-
     & .input-area {
         background-color: #000000;
         box-shadow: 1px 1px 2px black;
@@ -45,15 +45,12 @@
         font-size: $text-size;
         border: none;
     }
-
     & .button {
         font-size: 1.5em;
         font-weight: 900;
         border-bottom: 7px solid $turquesa;
-        border-radius: 7px;
-        
+        border-radius: 7px;  
     }
-
     & .white-text {
         text-align: center;
     }
@@ -64,9 +61,11 @@
     border-radius: 4px;
     border: 1px solid #828282;
 }
+
 .input:checked + .span {
     background-color: $turquesa;
 }
+
 .video {
     background-color: black;
     transform: skew(0deg, -5deg) translateY(-250px);
@@ -111,7 +110,6 @@
         font-family: 'Russo One', sans-serif;
         font-weight: 500;
     }
-   
 }
 
 .white-card {
@@ -149,8 +147,7 @@
     transform: skew(0deg, -5deg) translateY(-150px);
     & .container {
         transform: skew(0deg, 5deg);
-    }
-    
+    } 
 }
 
 .line-column, .line-column-big, .line-row, .line-row2 {
@@ -169,6 +166,7 @@
 .hr {
     background-color: black;
 }
+
 .aprender {
     color: #fff;
     background-color: black;
@@ -198,7 +196,6 @@
     }
 }
 
-
 .certificacao-section {
     color: #fff;
     background-color: black;
@@ -225,6 +222,7 @@
         
     }
 }
+
 .bg-aspas {
     background-color: #fff;
     transform: skew(0deg, -5deg) translateY(80px);
@@ -232,6 +230,7 @@
         transform: skew(0deg, 5deg);
     }
 }
+
 .text-section {
     font-size: 1.5em;
     font-weight: 800;

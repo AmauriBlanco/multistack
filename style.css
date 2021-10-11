@@ -386,11 +386,7 @@ button, .border-icon {
     padding: 20px;
   }
 
-  .lines {
-    display: none;
-  }
-
-  .desktop {
+  .lines, .desktop {
     display: none;
   }
 
