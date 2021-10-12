@@ -17,6 +17,28 @@ button, .border-icon {
   cursor: pointer;
 }
 
+.button-generic {
+  width: 470px;
+  height: 80px;
+}
+
+.prof {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 10px;
+  height: 500px;
+  width: 300px;
+}
+
+@media (max-width: 576px) {
+  .prof {
+    height: 450px;
+  }
+}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -100,7 +122,7 @@ button, .border-icon {
     font-size: 1.2em;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .multistack.description .description-logo {
     width: 100%;
   }
@@ -117,7 +139,7 @@ button, .border-icon {
     font-size: 0.9em;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .description .class-row {
     display: flex;
     flex-direction: column;
@@ -299,8 +321,11 @@ button, .border-icon {
 .cronograma .card-title {
   padding: 200px 0 100px 0;
 }
+.cronograma .last-card {
+  padding: 30px 0 0 0;
+}
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .cronograma .card-title {
     padding: 100px 0;
   }
@@ -314,7 +339,7 @@ button, .border-icon {
     margin: 0 auto;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .paragraph {
     padding: 40px 0 40px 0;
     text-align: center;
@@ -342,10 +367,10 @@ button, .border-icon {
   height: 1px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .cronograma .card {
     width: 90%;
-    gap: 0;
+    gap: 15px;
   }
   .cronograma .card-row-area {
     width: 100%;
@@ -469,14 +494,20 @@ button, .border-icon {
     width: 95%;
   }
   .cronograma .column-card {
-    margin: 0;
     display: block;
     height: auto;
   }
-
-  .last-card {
-    padding: 175px 0 0 0;
+  .cronograma .last-card {
+    padding: 100px 0 0 0;
     display: block;
+  }
+}
+@media (max-width: 742px) {
+  .cronograma .column-card {
+    margin: 50px 0 0 0;
+  }
+  .cronograma .last-card {
+    padding: 50px 0 0 0;
   }
 }
 .black-circle {
@@ -492,13 +523,24 @@ button, .border-icon {
 }
 .tools .tools-title {
   margin: 80px auto 30px auto;
-  width: 345px;
+  max-width: 345px;
 }
 .tools .tools-icons {
-  padding: 10px 0 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 1100px;
 }
-.tools .icons {
-  padding: 50px 30px;
+.tools .size-icons {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  width: 150px;
+  height: 100px;
 }
 
 @media (max-width: 920px) {
@@ -518,7 +560,7 @@ button, .border-icon {
   text-align: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .aprender {
     padding: 70px 0 0 0;
   }
@@ -535,19 +577,8 @@ button, .border-icon {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 50px;
   padding: 50px 0 70px 0;
-}
-.prof-area .prof {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 10px;
-  height: 550px;
-  width: 300px;
 }
 
 .certificacao {
@@ -612,10 +643,7 @@ button, .border-icon {
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
-}
-.aspas .button .button-self {
-  height: 80px;
-  width: 470px;
+  padding: 50px 0 0 0;
 }
 .aspas .img {
   display: flex;
@@ -643,7 +671,7 @@ button, .border-icon {
     padding: 50px 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .aspas .text-section {
     position: relative;
     top: 70px;
@@ -731,6 +759,26 @@ button, .border-icon {
     height: 250px;
   }
 }
+.card {
+  background-color: #02E7D9;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px #0aeed0bb;
+}
+.card .title-card {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.card .subtitle-card {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.card .card-title, .card .card-subtitle {
+  font-size: 1.7em;
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
+}
+
 .header {
   background-color: #000000;
 }
@@ -787,7 +835,7 @@ button, .border-icon {
   text-align: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .subscription .sub-title {
     font-size: 1.8em;
   }
@@ -827,26 +875,6 @@ button, .border-icon {
 .pra-quem .color-number {
   color: #02E7D9;
   font-weight: 900;
-}
-
-.cronograma .card {
-  background-color: #02E7D9;
-  border-radius: 15px;
-  box-shadow: 1px 1px 3px #0aeed0bb;
-}
-.cronograma .card .title-card {
-  font-size: 1.3em;
-  font-weight: 700;
-}
-.cronograma .card .subtitle-card {
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: 700;
-}
-.cronograma .card-title, .cronograma .card-subtitle {
-  font-size: 1.7em;
-  font-family: "Russo One", sans-serif;
-  font-weight: 500;
 }
 
 .white-card {

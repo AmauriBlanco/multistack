@@ -1,3 +1,5 @@
+@import "card";
+
 .header {
     background-color: #000000;
 }
@@ -56,7 +58,6 @@
     }
 }
 
-
 @media(max-width: $breakpoint-smallscreen) {
     .subscription {
         & .sub-title {
@@ -101,28 +102,6 @@
     & .color-number {
         color: $turquesa;
         font-weight: 900;
-    }
-}
-
-.cronograma {
-    .card {
-        background-color: $turquesa;
-        border-radius: 15px;
-        box-shadow: 1px 1px 3px #0aeed0bb;
-        & .title-card {
-            font-size: 1.3em;
-            font-weight: 700;
-        }
-        & .subtitle-card {
-            color: #fff;
-            font-size: 1.1em;
-            font-weight: 700;
-        }
-    }
-    & .card-title, .card-subtitle {
-        font-size: 1.7em;
-        font-family: 'Russo One', sans-serif;
-        font-weight: 500;
     }
 }
 

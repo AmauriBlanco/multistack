@@ -1,0 +1,12 @@
+.prof {
+    @include display(flex, column, flex-start, center, wrap, 40px);
+    @include pad(10px);
+    height: 500px;
+    width: 300px;
+}
+
+@media (max-width: $breakpoint-smallscreen) {
+    .prof {
+        height: 450px;
+    }
+}
