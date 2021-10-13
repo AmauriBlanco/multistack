@@ -57,19 +57,6 @@
         text-align: center;
     }
 }
-
-@media(max-width: $breakpoint-smallscreen) {
-    .subscription {
-        & .sub-title {
-            font-size: 1.8em;
-        }
-    }
-    .description {
-        & .white-text {
-            font-size: 1.2em;
-        }
-    }
-}
     
 .check .span {
     background-color: #141414;

@@ -1,0 +1,349 @@
+// #############  1140px  ##################### 
+
+@media(max-width: $breakpoint-extra-large) {
+    .multistack {
+        & .multistack-description {
+            width: 60%;
+        }
+        & .description {
+            @include display(flex, column, center, center,wrap);
+            text-align: center;
+            & .description-logo {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: $breakpoint-extra-large) {
+    .img-top-section {
+       & .working-man {
+            position: relative;
+            top: 0;
+       }
+    }
+}
+
+@media(max-width: $breakpoint-extra-large){
+    .div-row {
+        & .line-row2 {
+            width: 80%;
+        }
+    }
+}
+
+@media(max-width: $breakpoint-extra-large) {
+    .card-row-area {
+        width: 100%;
+        gap: 10px;
+    }
+    .cronograma {
+        & .container {
+            width: 95%;
+        }
+        & .column-card {
+            display: block;
+            height: auto
+        }
+        .last-card {
+            @include pad(100px 0 0 0);
+            display: block;
+        }
+    }
+}
+
+// ############  960px  #################
+
+@media(max-width: $breakpoint-large) {
+    .pra-quem, .paragraph {
+        @include pad( 30px 0);
+        @include margin(0);
+
+    }
+    .img-top-section {
+       & .working-man {
+          
+            display: none;
+       }
+    }
+}
+
+@media(max-width: $breakpoint-large ) {
+    .cronograma{
+        & .column-card {
+            height: auto;
+        }
+        & .column-card, .card-row {
+            @include display(flex, column, center, center, wrap, 0);
+            @include pad(20px);
+        }
+        & .lines, .desktop {
+            display: none;
+        }
+        & .last-card {
+            @include pad(50px 0 0 0);
+        }
+        & .button-card {
+            @include margin(100px auto 0 auto);
+        }  
+    }
+}
+
+@media(max-width : $breakpoint-large) {
+    .certificacao {
+        & .certificacao-content {
+            & .content-text {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media(max-width: $breakpoint-large){
+    .tools {
+        @include pad(50px 0);
+        & .tools-title {
+            width: 90%;
+        }
+    }
+}
+
+// ##############  720px ################
+
+@media(max-width : $breakpoint-medium) {
+    .multistack{
+        & .multistack-description{
+            @include margin(0 auto);
+            width: 90%;
+        }
+        & .subscription {
+            @include pad(30px);
+            @include margin(0 auto);
+            width: 70%;
+            & .input-area {
+                @include pad(0 0 0 80px);
+                width: 60%;
+            }
+            & .button {
+                width: 100%;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+@media(max-width : $breakpoint-medium) {
+    .video-self {
+        width: 70%;
+    }
+}
+
+@media(max-width : $breakpoint-medium){
+    .paragraph {
+        @include margin(0 auto);
+    }
+    .cronograma {
+        @include margin(0 auto);
+    }
+}
+
+@media(max-width: $breakpoint-medium) {
+    .cronograma{
+        .card-title {
+            @include pad(100px 0);
+        }
+        & .column-card {
+            @include margin(50px 0 0 0);
+        }
+        & .last-card {
+            @include pad(50px 0 0 0);
+        }
+    }
+}
+
+@media(max-width : $breakpoint-medium){
+    .certificacao {
+        @include pad(0 0 70px 0);
+        & .certificacao-content {
+            gap: 0;
+            & .content-text {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width : $breakpoint-medium) {
+    .aspas {
+        position: relative;
+        top: -210px;
+        & .img {
+            display: none;
+        }
+        & .text-section {
+            @include pad(30px 0);
+            width: 80%;
+        }
+        & .button {
+            @include pad(50px 0);
+        }
+    }
+}
+
+@media(max-width: $breakpoint-medium) {
+    .footer {
+        & .container {
+            width: 100%;
+        }
+        & .footer-logo {
+            width: 80%;
+        }
+        & .footer-content {
+            & .row {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media(max-width: $breakpoint-medium) {
+    .container-smallphone {
+        width: 96%;
+        @include margin(0 auto);
+    }
+    iframe {
+        height: 250px;
+    }
+}
+
+@media(max-width: $breakpoint-medium) {
+    .footer .footer-logo {
+        width: 50%;
+    }
+}
+
+// #############  540px  ############
+
+@media (max-width: $breakpoint-small) {
+    .prof {
+        height: 450px;
+    }
+}
+
+@media(max-width : $breakpoint-small) {
+    .multistack {
+
+        &.description {
+            & .description-logo {
+                width: 100%;
+                
+            }
+        }
+       & .subscription {
+           width: 80%;
+            & .input-area, .button{
+                @include margin(0 auto);
+                height: 60px;
+                width: 77%;
+                border: none;
+            }
+            & .security {
+                font-size: 0.9em;
+            }  
+        }
+    }
+}
+
+@media(max-width : $breakpoint-small) {
+    .description {
+        & .class-row {
+            @include display(flex, column, center, center, wrap, 40px);
+            & .row {
+                @include display(flex, column, center, center);
+            }
+        }
+    }
+}
+
+@media(max-width: $breakpoint-small) {
+    .cronograma {
+        & .card-title {
+            @include pad(100px 0);
+        }
+        & .card-subtitle {
+            @include margin(100px auto 0 auto);
+        }
+    }
+}
+
+@media(max-width : $breakpoint-small) {
+    .paragraph {
+        @include pad(40px 0 40px 0);
+        text-align: center;
+    }
+}
+
+@media(max-width : $breakpoint-small){
+    .cronograma {
+        & .card {
+            width: 90%;
+            gap: 15px;
+        }
+        .card-row-area {
+            width: 100%;
+        }
+        & .column-card {
+            @include pad(20px 0);
+            & .card-row {
+                @include pad(0 5px);
+                width: 100%;
+            }
+        }
+        & .last-card {
+            @include pad(70px 0 20px 0);
+            width: 100%;
+            & .white-card {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media(max-width :$breakpoint-small) {
+    .aprender {
+        @include pad(90px 0 0 0);
+        & .aprender-title {
+            width: 90%;
+        }
+        & .prof-area {
+            & .prof {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: $breakpoint-small) {
+    .aspas {
+        & .text-section {
+            position: relative;
+            top: 70px;
+            width: 90%;
+        }
+        & .aspas-p {
+            left: 90%;
+            top: 70px;
+        }
+        & .button {
+            position: relative;
+            top: 100px;
+        }
+    }
+}
+
+@media(max-width: $breakpoint-column-cards) {
+    .lines {
+        display: none;
+    }
+}

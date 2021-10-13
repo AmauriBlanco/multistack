@@ -1,0 +1,13 @@
+@media(max-width: $breakpoint-small) {
+    .subscription {
+        & .sub-title {
+            font-size: 1.8em;
+        }
+    }
+    .description {
+        & .white-text {
+            font-size: 1.2em;
+        }
+    }
+}
+
